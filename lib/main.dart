@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:training/custom_paint/arc.dart';
 import 'package:training/custom_paint/arcs.dart';
-import 'package:training/custom_paint/curved_container.dart';
-import 'package:training/custom_paint/star.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,10 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const HomeScreen(),
     );
   }
@@ -30,7 +24,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(child: Arcs()),
+      body: Center(
+        child: Arcs(),
+      ),
     );
   }
 }
