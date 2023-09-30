@@ -62,7 +62,7 @@ class CustomArcPainter extends CustomPainter {
         3.14 / arcLengthList[i],
         false,
         Paint()
-          ..style = PaintingStyle.fill
+          ..style = PaintingStyle.stroke
           ..color = arcColorList[i].withOpacity(.8)
           ..strokeCap = StrokeCap.round
           ..strokeWidth = 10,
