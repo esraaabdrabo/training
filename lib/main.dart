@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:training/custom_paint/arc.dart';
+import 'package:training/custom_paint/arcs.dart';
 import 'package:training/custom_paint/curved_container.dart';
 import 'package:training/custom_paint/star.dart';
 
@@ -28,7 +30,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(child: CurvedContainer()),
+      body: Center(child: Arcs()),
     );
   }
 }
