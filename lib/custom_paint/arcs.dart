@@ -34,7 +34,6 @@ class Arcs extends StatelessWidget {
       // large number (10 , 9 ,8)
       //else if means that this arc will be long
     }
-    print(lengths.toString());
     return lengths;
   }
 }
@@ -59,7 +58,7 @@ class CustomArcPainter extends CustomPainter {
     for (var i = 0; i < arcLengthList.length; i++) {
       canvas.drawArc(
         rect,
-        3 * 3.14 / 2 + previousLength + .08 * i,
+        3.14 + previousLength + .08 * i,
         3.14 / arcLengthList[i],
         false,
         Paint()
