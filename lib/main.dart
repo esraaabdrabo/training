@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:training/custom_paint/arcs.dart';
+import 'package:training/snack_bar/example.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Arcs(),
+        child: SnackBarExample(),
       ),
     );
   }
