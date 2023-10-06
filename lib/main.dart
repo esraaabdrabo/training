@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:training/base_cubit/example.dart';
 import 'package:training/snack_bar/example.dart';
 
 void main() async {
@@ -25,7 +26,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: SnackBarExample(),
+        child: BaseCubitExample(),
       ),
     );
   }
